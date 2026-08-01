@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+
+{% block title %}
+Login - Secure369 Portal
+{% endblock %}
+
+{% block content %}
+
+<div class="secure-login-wrapper">
+
+    <div class="secure-login-container">
+
+        <!-- LEFT SIDE -->
+        <div class="login-brand-side">
+
+            <img
+                src="{{ url_for('static', filename='images/secure369-logo.jpeg') }}"
+                alt="Secure369 Solutions"
+                class="secure-login-logo">
+
+            <h2>Secure369 Solutions</h2>
+
+            <p>
+                Secure access to the Intern & Employee Management Portal.
+            </p>
+
+            <div class="security-message">
+                🔒 Authorized personnel only
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT SIDE -->
+        <div class="login-form-side">
+
+            <div class="login-form-content">
+
+                <span class="portal-label">
+                    SECURE369 PORTAL
+                </span>
+
+                <h1>Welcome to Secure369 Portal</h1>
+
+                <p class="login-subtitle">
+                    Sign in to continue to your account
+                </p>
+
+                <form>
+
+                    <div class="mb-4">
+
+                        <label class="form-label">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            class="form-control secure-input"
+                            placeholder="name@secure369.com"
+                            required>
+
+                    </div>
+
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Password
+                        </label>
+
+                        <input
+                            type="password"
+                            class="form-control secure-input"
+                            placeholder="Enter your password"
+                            required>
+
+                    </div>
+
+
+                    <div class="login-options">
+
+                        <div>
+                            <input type="checkbox" id="remember">
+
+                            <label for="remember">
+                                Remember me
+                            </label>
+                        </div>
+
+                        <a href="#">
+                            Forgot password?
+                        </a>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="secure-login-btn">
+
+                        Sign In
+
+                    </button>
+
+                </form>
+
+
+                <div class="login-bottom-text">
+
+                    <span class="security-dot"></span>
+
+                    Secure369 Protected Portal
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

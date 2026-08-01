@@ -1,35 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Secure369 Portal</title>
+{% extends "base.html" %}
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
+{% block title %}
+Home - Secure369 Portal
+{% endblock %}
 
-    <nav class="navbar navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                Secure369 Portal
-            </a>
+{% block content %}
+
+<section class="hero-section">
+
+    <span class="hero-badge">
+        Secure369 Internal Management Platform
+    </span>
+
+    <h1>
+        Intern & Employee<br>
+        Management Portal
+    </h1>
+
+    <p>
+        A centralized platform for managing interns, employees,
+        attendance, training, projects and the complete journey
+        from internship to full-time employment.
+    </p>
+
+    <a href="#" class="portal-btn">
+        Access Portal
+    </a>
+
+</section>
+
+<section class="pb-5">
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="feature-card">
+                <h4>Intern Management</h4>
+                <p>
+                    Register interns, generate unique Intern IDs,
+                    manage training, attendance and internship progress.
+                </p>
+            </div>
         </div>
-    </nav>
 
-    <div class="container mt-5 text-center">
+        <div class="col-md-4">
+            <div class="feature-card">
+                <h4>Employee Management</h4>
+                <p>
+                    Manage employee profiles, departments,
+                    designations, attendance and employment records.
+                </p>
+            </div>
+        </div>
 
-        <h1>Welcome to Secure369 Portal</h1>
-
-        <p class="lead">
-            Internship Management System
-        </p>
-
-        <button class="btn btn-primary">
-            Login
-        </button>
+        <div class="col-md-4">
+            <div class="feature-card">
+                <h4>Intern → Employee</h4>
+                <p>
+                    Convert successful interns into full-time employees
+                    while preserving their complete internship history.
+                </p>
+            </div>
+        </div>
 
     </div>
 
-</body>
-</html>
+</section>
+
+{% endblock %}
