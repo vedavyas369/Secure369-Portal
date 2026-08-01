@@ -460,3 +460,667 @@ main {
         font-size: 16px;
     }
 }
+
+
+/* =====================================================
+   SECURE369 CYBER LOGIN - OPTION 4
+===================================================== */
+
+.cyber-login-page {
+    min-height: calc(100vh - 90px);
+    background:
+        radial-gradient(circle at 20% 30%, rgba(0, 102, 255, 0.16), transparent 35%),
+        radial-gradient(circle at 80% 60%, rgba(0, 153, 255, 0.10), transparent 35%),
+        #020b18;
+
+    padding: 50px 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Subtle cyber grid */
+
+.cyber-login-page::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image:
+        linear-gradient(rgba(0, 119, 255, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 119, 255, 0.035) 1px, transparent 1px);
+
+    background-size: 45px 45px;
+
+    pointer-events: none;
+}
+
+
+/* =====================================================
+   MAIN CONTAINER
+===================================================== */
+
+.cyber-login-container {
+    width: 100%;
+    max-width: 1250px;
+    min-height: 700px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =====================================================
+   LEFT BRAND PANEL
+===================================================== */
+
+.cyber-brand-panel {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 55px;
+
+    text-align: center;
+    color: white;
+
+    overflow: hidden;
+}
+
+
+/* Circuit decoration */
+
+.circuit-decoration {
+    position: absolute;
+    inset: 0;
+
+    opacity: 0.25;
+
+    background:
+        linear-gradient(90deg, transparent 49%, rgba(0, 136, 255, 0.3) 50%, transparent 51%),
+        linear-gradient(transparent 49%, rgba(0, 136, 255, 0.2) 50%, transparent 51%);
+
+    background-size: 100px 100px;
+
+    pointer-events: none;
+}
+
+
+/* =====================================================
+   SHIELD EFFECT
+===================================================== */
+
+.shield-frame {
+    width: 390px;
+    height: 390px;
+
+    max-width: 90%;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 15px;
+}
+
+
+/* Outer glowing shield */
+
+.shield-frame::before {
+    content: "";
+
+    position: absolute;
+
+    width: 340px;
+    height: 370px;
+
+    border: 2px solid rgba(0, 153, 255, 0.55);
+
+    border-radius:
+        48% 48% 55% 55% / 30% 30% 70% 70%;
+
+    box-shadow:
+        0 0 20px rgba(0, 153, 255, 0.35),
+        inset 0 0 30px rgba(0, 153, 255, 0.08);
+
+    transform: rotate(0deg);
+}
+
+
+/* Inner shield glow */
+
+.shield-frame::after {
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 330px;
+
+    border: 1px solid rgba(0, 153, 255, 0.25);
+
+    border-radius:
+        48% 48% 55% 55% / 30% 30% 70% 70%;
+
+    box-shadow:
+        0 0 70px rgba(0, 119, 255, 0.15);
+}
+
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.cyber-logo {
+    width: 260px;
+    max-width: 75%;
+    height: auto;
+
+    position: relative;
+    z-index: 5;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 0 30px rgba(0, 136, 255, 0.25);
+}
+
+
+/* =====================================================
+   BRAND TEXT
+===================================================== */
+
+.cyber-brand-panel h2 {
+    position: relative;
+    z-index: 5;
+
+    font-size: 32px;
+    font-weight: 700;
+
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+
+.brand-description {
+    position: relative;
+    z-index: 5;
+
+    max-width: 430px;
+
+    color: #a9b8cb;
+
+    font-size: 17px;
+    line-height: 1.7;
+
+    margin-bottom: 45px;
+}
+
+
+/* =====================================================
+   TRUST FEATURES
+===================================================== */
+
+.trust-features {
+    position: relative;
+    z-index: 5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 30px;
+}
+
+
+.trust-item {
+    min-width: 85px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 10px;
+
+    color: #b9c7d9;
+
+    font-size: 14px;
+}
+
+
+.trust-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #168dff;
+
+    border-radius: 50%;
+
+    color: #54aaff;
+
+    font-size: 19px;
+
+    box-shadow:
+        0 0 15px rgba(0, 132, 255, 0.15);
+}
+
+
+.trust-divider {
+    width: 1px;
+    height: 65px;
+
+    background: rgba(255, 255, 255, 0.15);
+}
+
+
+/* =====================================================
+   RIGHT FORM PANEL
+===================================================== */
+
+.cyber-form-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px;
+}
+
+
+.cyber-form-card {
+    width: 100%;
+    max-width: 520px;
+
+    padding: 55px;
+
+    background:
+        linear-gradient(145deg,
+            rgba(9, 28, 50, 0.95),
+            rgba(3, 17, 34, 0.98));
+
+    border: 1px solid rgba(25, 137, 255, 0.65);
+
+    border-radius: 28px;
+
+    box-shadow:
+        0 25px 80px rgba(0, 0, 0, 0.45),
+        0 0 40px rgba(0, 119, 255, 0.08);
+
+    color: white;
+}
+
+
+/* =====================================================
+   FORM HEADER
+===================================================== */
+
+.portal-small-label {
+    color: #168dff;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 2.5px;
+
+    margin-bottom: 18px;
+}
+
+
+.cyber-form-card h1 {
+    color: #ffffff;
+
+    font-size: 40px;
+    font-weight: 800;
+
+    margin-bottom: 8px;
+}
+
+
+.cyber-form-card h1 span {
+    color: #168dff;
+}
+
+
+.form-subtitle {
+    color: #9eacbd;
+
+    font-size: 16px;
+
+    margin-bottom: 38px;
+}
+
+
+/* =====================================================
+   FORM FIELDS
+===================================================== */
+
+.cyber-form-group {
+    margin-bottom: 25px;
+}
+
+
+.cyber-form-group label {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+.cyber-input-wrapper {
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+
+    border: 1px solid #294665;
+
+    border-radius: 11px;
+
+    background: rgba(1, 13, 27, 0.65);
+
+    transition: 0.25s;
+}
+
+
+.cyber-input-wrapper:focus-within {
+    border-color: #168dff;
+
+    box-shadow:
+        0 0 0 3px rgba(22, 141, 255, 0.10),
+        0 0 20px rgba(22, 141, 255, 0.08);
+}
+
+
+.input-icon {
+    width: 55px;
+
+    text-align: center;
+
+    color: #70b6ff;
+
+    font-size: 18px;
+}
+
+
+.cyber-input-wrapper input {
+    flex: 1;
+
+    height: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    padding-right: 15px;
+}
+
+
+.cyber-input-wrapper input::placeholder {
+    color: #718096;
+}
+
+
+/* =====================================================
+   LOGIN OPTIONS
+===================================================== */
+
+.cyber-login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 5px;
+    margin-bottom: 28px;
+
+    font-size: 14px;
+}
+
+
+.remember-option {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    color: #c0cad7;
+
+    cursor: pointer;
+}
+
+
+.remember-option input {
+    width: 16px;
+    height: 16px;
+
+    accent-color: #168dff;
+}
+
+
+.cyber-login-options a {
+    color: #168dff;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+
+.cyber-login-options a:hover {
+    text-decoration: underline;
+}
+
+
+/* =====================================================
+   SIGN IN BUTTON
+===================================================== */
+
+.cyber-signin-btn {
+    width: 100%;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    border: none;
+    border-radius: 11px;
+
+    background:
+        linear-gradient(90deg,
+            #1264f3,
+            #129dff);
+
+    color: white;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+
+    box-shadow:
+        0 10px 30px rgba(0, 119, 255, 0.18);
+}
+
+
+.cyber-signin-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 136, 255, 0.32);
+}
+
+
+.button-arrow {
+    font-size: 22px;
+
+    transition: transform 0.2s;
+}
+
+
+.cyber-signin-btn:hover .button-arrow {
+    transform: translateX(4px);
+}
+
+
+/* =====================================================
+   AUTHORIZED PERSONNEL
+===================================================== */
+
+.authorized-section {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    margin-top: 38px;
+}
+
+
+.authorized-line {
+    flex: 1;
+
+    height: 1px;
+
+    background: rgba(255, 255, 255, 0.13);
+}
+
+
+.authorized-text {
+    color: #9eacbd;
+
+    font-size: 13px;
+
+    white-space: nowrap;
+}
+
+
+/* =====================================================
+   PROTECTED PORTAL
+===================================================== */
+
+.protected-portal {
+    margin-top: 25px;
+
+    color: #a8b6c8;
+
+    font-size: 14px;
+}
+
+
+.protected-icon {
+    display: inline-flex;
+
+    width: 20px;
+    height: 20px;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 7px;
+
+    background: #16b86a;
+
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 11px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .cyber-login-container {
+        grid-template-columns: 1fr;
+    }
+
+    .cyber-brand-panel {
+        padding: 40px 20px;
+    }
+
+    .shield-frame {
+        width: 280px;
+        height: 280px;
+    }
+
+    .shield-frame::before {
+        width: 250px;
+        height: 270px;
+    }
+
+    .shield-frame::after {
+        width: 220px;
+        height: 240px;
+    }
+
+    .cyber-logo {
+        width: 190px;
+    }
+
+    .cyber-form-panel {
+        padding: 20px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .cyber-login-page {
+        padding: 25px 10px;
+    }
+
+    .cyber-brand-panel {
+        display: none;
+    }
+
+    .cyber-form-card {
+        padding: 35px 25px;
+    }
+
+    .cyber-form-card h1 {
+        font-size: 31px;
+    }
+
+    .cyber-login-options {
+        gap: 15px;
+    }
+
+    .authorized-line {
+        display: none;
+    }
+}

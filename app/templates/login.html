@@ -6,87 +6,140 @@ Login - Secure369 Portal
 
 {% block content %}
 
-<div class="secure-login-wrapper">
+<div class="cyber-login-page">
 
-    <div class="secure-login-container">
+    <div class="cyber-login-container">
 
         <!-- LEFT SIDE -->
-        <div class="login-brand-side">
+        <section class="cyber-brand-panel">
 
-            <img
-                src="{{ url_for('static', filename='images/secure369-logo.jpeg') }}"
-                alt="Secure369 Solutions"
-                class="secure-login-logo">
+            <div class="circuit-decoration"></div>
 
-            <h2>Secure369 Solutions</h2>
+            <div class="shield-frame">
 
-            <p>
-                Secure access to the Intern & Employee Management Portal.
-            </p>
+                <img
+                    src="{{ url_for('static', filename='images/secure369-logo.jpeg') }}"
+                    alt="Secure369 Solutions"
+                    class="cyber-logo">
 
-            <div class="security-message">
-                🔒 Authorized personnel only
             </div>
 
-        </div>
+            <h2>Secure369 Portal</h2>
+
+            <p class="brand-description">
+                Secure access to the Intern & Employee
+                Management Portal.
+            </p>
+
+            <div class="trust-features">
+
+                <div class="trust-item">
+                    <div class="trust-icon">✓</div>
+                    <span>Secure</span>
+                </div>
+
+                <div class="trust-divider"></div>
+
+                <div class="trust-item">
+                    <div class="trust-icon">✓</div>
+                    <span>Reliable</span>
+                </div>
+
+                <div class="trust-divider"></div>
+
+                <div class="trust-item">
+                    <div class="trust-icon">♙</div>
+                    <span>Trusted</span>
+                </div>
+
+            </div>
+
+        </section>
 
 
         <!-- RIGHT SIDE -->
-        <div class="login-form-side">
+        <section class="cyber-form-panel">
 
-            <div class="login-form-content">
+            <div class="cyber-form-card">
 
-                <span class="portal-label">
+                <div class="portal-small-label">
                     SECURE369 PORTAL
-                </span>
+                </div>
 
-                <h1>Welcome to Secure369 Portal</h1>
+                <h1>
+                    Welcome <span>Back!</span>
+                </h1>
 
-                <p class="login-subtitle">
+                <p class="form-subtitle">
                     Sign in to continue to your account
                 </p>
 
-                <form>
 
-                    <div class="mb-4">
+                <form method="POST">
 
-                        <label class="form-label">
+                    <!-- EMAIL -->
+
+                    <div class="cyber-form-group">
+
+                        <label for="email">
                             Email Address
                         </label>
 
-                        <input
-                            type="email"
-                            class="form-control secure-input"
-                            placeholder="name@secure369.com"
-                            required>
+                        <div class="cyber-input-wrapper">
+
+                            <span class="input-icon">✉</span>
+
+                            <input
+                                id="email"
+                                name="email"
+                                type="email"
+                                placeholder="name@secure369.com"
+                                autocomplete="email"
+                                required>
+
+                        </div>
 
                     </div>
 
 
-                    <div class="mb-3">
+                    <!-- PASSWORD -->
 
-                        <label class="form-label">
+                    <div class="cyber-form-group">
+
+                        <label for="password">
                             Password
                         </label>
 
-                        <input
-                            type="password"
-                            class="form-control secure-input"
-                            placeholder="Enter your password"
-                            required>
+                        <div class="cyber-input-wrapper">
+
+                            <span class="input-icon">🔒</span>
+
+                            <input
+                                id="password"
+                                name="password"
+                                type="password"
+                                placeholder="Enter your password"
+                                autocomplete="current-password"
+                                required>
+
+                        </div>
 
                     </div>
 
 
-                    <div class="login-options">
+                    <!-- OPTIONS -->
 
-                        <div>
-                            <input type="checkbox" id="remember">
+                    <div class="cyber-login-options">
 
-                            <label for="remember">
-                                Remember me
-                            </label>
-                        </div>
+                        <label class="remember-option">
+
+                            <input
+                                type="checkbox"
+                                name="remember">
+
+                            <span>Remember me</span>
+
+                        </label>
 
                         <a href="#">
                             Forgot password?
@@ -95,28 +148,49 @@ Login - Secure369 Portal
                     </div>
 
 
+                    <!-- LOGIN BUTTON -->
+
                     <button
                         type="submit"
-                        class="secure-login-btn">
+                        class="cyber-signin-btn">
 
-                        Sign In
+                        <span>Sign In</span>
+
+                        <span class="button-arrow">→</span>
 
                     </button>
 
                 </form>
 
 
-                <div class="login-bottom-text">
+                <!-- AUTHORIZED -->
 
-                    <span class="security-dot"></span>
+                <div class="authorized-section">
 
-                    Secure369 Protected Portal
+                    <div class="authorized-line"></div>
+
+                    <div class="authorized-text">
+                        🔒 Authorized personnel only
+                    </div>
+
+                    <div class="authorized-line"></div>
 
                 </div>
 
             </div>
 
-        </div>
+
+            <!-- PROTECTED -->
+
+            <div class="protected-portal">
+
+                <span class="protected-icon">✓</span>
+
+                Secure369 Protected Portal
+
+            </div>
+
+        </section>
 
     </div>
 
